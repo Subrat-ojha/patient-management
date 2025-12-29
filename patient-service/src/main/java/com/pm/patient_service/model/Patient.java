@@ -1,10 +1,10 @@
 package com.pm.patient_service.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.UUID;
 
@@ -25,10 +25,10 @@ public class Patient {
     private String address;
 
     @NotNull
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
 
     @NotNull
-    private Date registeredDate;
+    private LocalDate registeredDate;
 
     public @NotNull String getName() {
         return name;
@@ -62,19 +62,19 @@ public class Patient {
         this.address = address;
     }
 
-    public @NotNull Date getDateOfBirth() {
+    public @NotNull @NotNull LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBitrth(@NotNull Date dateOfBirth) {
+    public void setDateOfBitrth(@NotNull LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public @NotNull Date getRegisteredDate() {
+    public @NotNull @NotNull LocalDate getRegisteredDate() {
         return registeredDate;
     }
 
-    public void setRegisteredDate(@NotNull Date registeredDate) {
+    public void setRegisteredDate(@NotNull LocalDate registeredDate) {
         this.registeredDate = registeredDate;
     }
 
