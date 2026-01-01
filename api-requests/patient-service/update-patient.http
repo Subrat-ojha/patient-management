@@ -1,0 +1,10 @@
+### PUT request to update patient details
+PUT http://localhost:4000/patients/123e4567-e89b-12d3-a456-426614174002
+Content-Type: application/json
+
+{
+  "name": "Subrat Ojha",
+  "address": "Rapeya",
+  "dateOfBirth": "1999-11-05"
+}
+###

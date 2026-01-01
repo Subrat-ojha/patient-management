@@ -1,0 +1,5 @@
+### Delete patient
+DELETE http://localhost:4000/patients/038f86a7-4929-4506-8a10-7714a72ce649
+Content-Type: application/json
+
+###
